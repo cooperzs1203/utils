@@ -81,7 +81,7 @@ func AutoToString(data interface{}) string {
 	}
 }
 
-// a ticker which interval [interval] seconds do [f]
+// a ticker which do [f] interval [interval] seconds
 func Ticker(f func(int64)bool , interval int64) {
 	go func() {
 		count := int64(0)
